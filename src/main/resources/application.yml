@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: expenses
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://root:wvloPvgPManHnxeBztPXXgJTVZtvjFCN@roundhouse.proxy.rlwy.net:50528/railway
+    username: root
+    password: wvloPvgPManHnxeBztPXXgJTVZtvjFCN
+    jpa:
+      hibernate:
+        ddl-auto: none
+  cloud:
+    config:
+      enabled: false
+eureka:
+  client:
+    service-url:
+      defaultZone: https://budget-wise-discovery-server-production.up.railway.app/eureka/
+server:
+    port: ${PORT}
+application:
+  config:
+    budgets-url: budgetwise-budgets-production.up.railway.app
