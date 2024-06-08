@@ -20,4 +20,4 @@ server:
     port: ${PORT}
 application:
   config:
-    budgets-url: https://budgetwise-budgets-production.up.railway.app
+    budgets-url: https://budgetwise-budgets-production.up.railway.app/api/budgets
