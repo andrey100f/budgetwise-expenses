@@ -6,9 +6,9 @@ spring:
     url: jdbc:mysql://root:wvloPvgPManHnxeBztPXXgJTVZtvjFCN@roundhouse.proxy.rlwy.net:50528/railway
     username: root
     password: wvloPvgPManHnxeBztPXXgJTVZtvjFCN
-    jpa:
-      hibernate:
-        ddl-auto: none
+  jpa:
+    hibernate:
+      ddl-auto: none
   cloud:
     config:
       enabled: false
@@ -20,4 +20,4 @@ server:
     port: ${PORT}
 application:
   config:
-    budgets-url: budgetwise-budgets-production.up.railway.app
+    budgets-url: https://budgetwise-budgets-production.up.railway.app
